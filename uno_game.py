@@ -25,21 +25,6 @@ class Player():
         self.number = number
         self.type = 'ai'  # human or computer
 
-    # def printHand(self):
-    #     """
-    #     Prints all the cards in a player's deck.
-    #     I wrote this and then realized that I
-    #     never actually used it. Keeping it
-    #     commented out just in case.
-    #     :return: string of cards in hadn.
-    #     """
-    #     strList = []
-    #     cards = ''
-    #     s = ' | '
-    #
-    #     cards = s.join(self.hand)
-    #     return cards
-
     def cardsInHand(self):
         return len(self.hand)
 
@@ -229,7 +214,7 @@ def dealCards():
 
 def firstCard():
     """
-    Deals the first card to start the game. Fuck
+    Deals the first card to start the game. Against
     current Uno rules, everyone plays by shuffling
     action cards back into the deck so that's what
     we're doing here.
